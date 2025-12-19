@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - echo "Node version:"
+      - node -v
+
+  build:
+    commands:
+      - echo "Running Node.js script..."
+      - node app.js
+
+  post_build:
+    commands:
+      - echo "Script execution finished"
+
